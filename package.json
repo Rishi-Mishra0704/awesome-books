@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Rishi-Mishra0704/awesome-books/issues"
   },
-  "homepage": "https://github.com/Rishi-Mishra0704/awesome-books#readme"
+  "homepage": "https://github.com/Rishi-Mishra0704/awesome-books#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.27.5"
+  }
 }
