@@ -26,7 +26,7 @@ const displayBooks = () => {
 
 const add = (Title, Author) => {
     const idRandom = Math.floor(Math.random() * 100000);
-    allBooks.push({id:idRandom, title: Title, author: Author });
+    allBooks.push({id: idRandom, title: Title, author: Author });
     localStorage.setItem("allBooks", JSON.stringify(allBooks));
   displayBooks();
 };
