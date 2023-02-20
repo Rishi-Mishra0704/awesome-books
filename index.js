@@ -1,4 +1,4 @@
-/* eslint-disable rule-you-want-to-disable */ 
+/* eslint-disable no-unused-vars */ 
 const form = document.querySelector('#form');
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
