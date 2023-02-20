@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
 const form = document.querySelector('#form');
 const title = document.querySelector('#title');
