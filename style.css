@@ -55,6 +55,7 @@ h2 {
 }
 
 #displayBook {
+  display: none;
   border: 2px solid black;
 }
 
@@ -71,7 +72,7 @@ h2 {
 }
 
 #addBookSection {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -84,7 +85,9 @@ h2 {
 #addBtn {
   margin-left: 25px;
 }
-
+.contact-info{
+  display: none;
+}
 button {
   background-color: rgba(13, 13, 13, 0.622);
   color: white;
