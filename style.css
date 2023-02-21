@@ -17,10 +17,18 @@ h1 {
   margin-left: 0.5rem;
 }
 
+.contact-info ul {
+  margin-top: 2rem;
+}
+
 #nav ul {
   display: flex;
-  gap:1rem;
+  gap: 1rem;
   margin-right: 0.5rem;
+}
+
+#form li {
+  margin: 0.5rem;
 }
 
 #nav ul li {
@@ -34,7 +42,7 @@ h1 {
 
 .separator {
   height: 20px;
-  border:1px solid black;
+  border: 1px solid black;
 }
 
 #date-time {
@@ -69,6 +77,14 @@ h2 {
   background-color: rgba(84, 77, 77, 0.056);
 }
 
+footer p {
+  border: 2px solid black;
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
 .items p {
   width: 100%;
 }
@@ -96,14 +112,10 @@ h2 {
   justify-content: center;
 }
 
-.contact-info ul {
-  margin-top: 2rem;
-}
-
 .contact-info li::before {
   content: "•";
   padding-right: 8px;
-  color: black
+  color: black;
 }
 
 button {
@@ -130,16 +142,4 @@ hr {
   width: 10vw;
   background-color: black;
   margin: 1rem 0;
-}
-
-#form li {
-  margin: 0.5rem;
-}
-
-footer p {
-  border: 2px solid black;
-  margin: 0.5rem;
-  padding-left: 0.5rem;
-  position: absolute;
-  bottom: 0;
 }
