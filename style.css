@@ -5,7 +5,7 @@
   overflow-x: hidden;
 }
 
-#nav{
+#nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,32 +13,32 @@
   margin: 1rem 1rem;
 }
 
-h1{
-margin-left: 0.5rem;
+h1 {
+  margin-left: 0.5rem;
 }
 
-#nav ul{
+#nav ul {
   display: flex;
   gap:1rem;
   margin-right: 0.5rem;
 }
 
-#nav ul li{
+#nav ul li {
   cursor: pointer;
 }
 
 #nav ul li:hover,
-#nav ul li:focus{
+#nav ul li:focus {
   color: rgba(239, 10, 10, 0.971);
 }
 
-.separator{
+.separator {
   height: 20px;
   border:1px solid black;
 }
 
-#date-time{
-  position: fixed;
+#date-time {
+  position: absolute;
   right: 0;
   margin-right: 1rem;
 }
@@ -55,8 +55,10 @@ h2 {
 }
 
 #displayBook {
-  display: none;
+  height: 100%;
+  display: block;
   border: 2px solid black;
+  margin-top: 1.5rem;
 }
 
 .items {
@@ -72,6 +74,7 @@ h2 {
 }
 
 #addBookSection {
+  height: 100%;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -85,9 +88,24 @@ h2 {
 #addBtn {
   margin-left: 25px;
 }
-.contact-info{
+
+.contact-info {
+  height: 100%;
   display: none;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.contact-info ul {
+  margin-top: 2rem;
+}
+
+.contact-info li::before {
+  content: "•";
+  padding-right: 8px;
+  color: black
+}
+
 button {
   background-color: rgba(13, 13, 13, 0.622);
   color: white;
@@ -118,8 +136,10 @@ hr {
   margin: 0.5rem;
 }
 
-footer p{
+footer p {
   border: 2px solid black;
   margin: 0.5rem;
   padding-left: 0.5rem;
+  position: absolute;
+  bottom: 0;
 }
