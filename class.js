@@ -8,6 +8,18 @@ const bookContainer = document.getElementById('displayBook');
 const allBook = JSON.parse(localStorage.getItem('allBook')) || [];
 const { title, author } = form.elements;
 
+/*  for showing time and date */
+function updateTime() {
+  const today = new Date();
+  const options = { month: 'short', day: 'numeric', year: 'numeric' };
+  const date = today.toLocaleString('en-US', options);
+  const time = today.toLocaleTimeString();
+  document.getElementById('date-time').innerHTML = `${date} , ${time}`;
+}
+updateTime();
+setInterval(updateTime, 1000);
+
+/*   */
 class Book {
   constructor(id, title, author) {
     this.id = id;
