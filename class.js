@@ -27,6 +27,15 @@ class Library {
     this.books.push(bookInfo);
     localStorage.setItem('allBook', JSON.stringify(this.books));
   }
+
+  remove(id) {
+    const removedBooks = this.books.filter((book) => book.id === id);
+    if (removedBooks.length === 1) {
+      this.books = this.books.filter((book) => book.id !== id);
+      localStorage.setItem('allBook', JSON.stringify(this.books));
+    }
+    window.location.reload();
+  }
 }
 
 const library = new Library();

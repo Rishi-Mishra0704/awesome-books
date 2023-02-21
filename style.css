@@ -12,7 +12,7 @@ main {
   align-items: center;
 }
 
-h1{
+h1 {
   margin: 1rem 0;
 }
 
@@ -37,11 +37,12 @@ h1{
   align-items: center;
 }
 
-#title, #author{
+#title,
+#author {
   padding: 0.5rem;
 }
 
-#addBtn{
+#addBtn {
   margin-left: 25px;
 }
 
