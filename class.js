@@ -6,7 +6,50 @@ const form = document.querySelector('#form');
 const addBtn = document.querySelector('#addBtn');
 const bookContainer = document.getElementById('displayBook');
 const allBook = JSON.parse(localStorage.getItem('allBook')) || [];
+const titleHead = document.querySelector('.title');
+const contact = document.querySelector('.contact-info');
+const contactBtn = document.getElementById('contact-btn');
 const { title, author } = form.elements;
+const listBtn = document.getElementById('list-btn');
+const addNewBtn = document.getElementById('add-new-btn');
+const addBookSection = document.getElementById('addBookSection');
+
+/* For Navigation */
+
+function navigation() {
+  contactBtn.addEventListener('click', () => {
+    contact.style.display = 'flex';
+    bookContainer.style.display = 'none';
+    addBookSection.style.display = 'none';
+    titleHead.style.display = 'none';
+  });
+  listBtn.addEventListener('click', () => {
+    bookContainer.style.display = 'block';
+    addBookSection.style.display = 'none';
+    contact.style.display = 'none';
+  });
+  addNewBtn.addEventListener('click', () => {
+    addBookSection.style.display = 'flex';
+    bookContainer.style.display = 'none';
+    contact.style.display = 'none';
+    titleHead.style.display = 'none';
+  });
+}
+navigation();
+
+/*  for showing time and date */
+
+function updateTime() {
+  const today = new Date();
+  const options = { month: 'short', day: 'numeric', year: 'numeric' };
+  const date = today.toLocaleString('en-US', options);
+  const time = today.toLocaleTimeString();
+  document.getElementById('date-time').innerHTML = `${date} , ${time}`;
+}
+updateTime();
+setInterval(updateTime, 1000);
+
+/* for adding and removing books  */
 
 class Book {
   constructor(id, title, author) {

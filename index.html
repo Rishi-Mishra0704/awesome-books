@@ -1,38 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Book</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Awesome Book</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header></header>
-  <main>
-    <h1 class="title">All Awesome books</h1>
-    <section id="displayBook">
-
-    </section>
-    <section id="addBookSection">
-      <hr>
-      <h2>Add a New Book</h2>
-      <form id="form">
-        <li>
-          <label for="title"></label>
-          <input id="title" name="title" type="text" placeholder="title" required>
-        </li>
-        <li>
-          <label for="author"></label>
-          <input id="author" name="author" type="text" placeholder="author" required>
-        </li>
-        <button id="addBtn" type="submit">Add book</button>
-      </form>
-    </section>
-  </main>
-  <script src="class.js"></script>
-</body>
-
+  <body>
+    <header>
+      <nav id="nav">
+        <h1>Awesome Books</h1>
+        <ul>
+          <li id="list-btn">List</li>
+          <li class="separator"></li>
+          <li id="add-new-btn">Add New</li>
+          <li class="separator"></li>
+          <li id="contact-btn">Contact</li>
+        </ul>
+      </nav>
+      <div id="date-time"></div>
+    </header>
+    <main>
+      <h2 class="title">All Awesome books</h2>
+      <section id="displayBook"></section>
+      <section id="addBookSection">
+        <hr />
+        <h2>Add a New Book</h2>
+        <form id="form">
+          <li>
+            <label for="title"></label>
+            <input
+              id="title"
+              name="title"
+              type="text"
+              placeholder="title"
+              required
+            />
+          </li>
+          <li>
+            <label for="author"></label>
+            <input
+              id="author"
+              name="author"
+              type="text"
+              placeholder="author"
+              required
+            />
+          </li>
+          <button id="addBtn" type="submit">Add book</button>
+        </form>
+      </section>
+      <section class="contact-info">
+        <h2>Contact Information</h2>
+        <div class="conact-para">
+          <p>Do you any question or just want to say "Hello"?</p>
+          <p>You can reach out to us</p>
+        </div>
+        <ul>
+          <li>Our email : email@email.com</li>
+          <li>Our Phone.no : 8429063480</li>
+          <li>Our Address : Some place,Nashik,Maharashtra,India</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright -</p>
+    </footer>
+    <script src="class.js"></script>
+  </body>
 </html>
