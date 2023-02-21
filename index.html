@@ -5,33 +5,34 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Awesome Book</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header></header>
   <main>
-    <h1 class="title">Awesome books</h1>
+    <h1 class="title">All Awesome books</h1>
     <section id="displayBook">
 
     </section>
     <section id="addBookSection">
+      <hr>
+      <h2>Add a New Book</h2>
       <form id="form">
         <li>
           <label for="title"></label>
-          <input id="title" name="title" type="text" placeholder="title">
+          <input id="title" name="title" type="text" placeholder="title" required>
         </li>
         <li>
           <label for="author"></label>
-          <input id="author" name="author" type="text" placeholder="author">
+          <input id="author" name="author" type="text" placeholder="author" required>
         </li>
         <button id="addBtn" type="submit">Add book</button>
       </form>
     </section>
   </main>
-
-  <script src="index.js"></script>
+  <script src="class.js"></script>
 </body>
 
 </html>
