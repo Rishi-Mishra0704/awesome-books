@@ -2,7 +2,6 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-unused-vars */
 const form = document.querySelector('#form');
-const addBtn = document.querySelector('#addBtn');
 const bookContainer = document.getElementById('displayBook');
 const allBook = JSON.parse(localStorage.getItem('allBook')) || [];
 const titleHead = document.querySelector('.title');
@@ -54,10 +53,12 @@ const displayBook = (books) => {
   // clear the container
   bookContainer.innerHTML = '';
   books.forEach((book) => {
+    const title = book.title[0].toUpperCase() + book.title.slice(1);
+    const author = book.author[0].toUpperCase() + book.author.slice(1);
     const div = document.createElement('div');
     div.classList.add('items');
     div.innerHTML = `
-        <p> "${book.title}" by <strong>${book.author}</strong></p>
+        <p> "${title}" by <strong>${author}</strong></p>
         <button onclick="library.remove(${book.id})" type="button" >Remove</button>
         `;
     bookContainer.appendChild(div);
